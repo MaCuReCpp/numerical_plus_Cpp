@@ -47,7 +47,7 @@ double Secant(std::function<double(double)> f, double a, double b){
     }
 }
 
-double FalsePosition(std::function<double(double)> f, double a, double b){
+double Falseposition(std::function<double(double)> f, double a, double b){
     if(f(a) * f(b) > 0)
         throw std::domain_error("f(a) * f(b) > 0\n");
     double p = a - (f(a) * (b - a)) / (f(b) - f(a));

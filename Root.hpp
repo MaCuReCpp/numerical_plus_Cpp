@@ -5,5 +5,6 @@
 
 double Bisection(std::function<double(double)>, double, double);
 double Secant(std::function<double(double)>, double, double);
+double Falseposition(std::function<double(double)>, double, double);
 
 #endif
